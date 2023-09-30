@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: salmon;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.fa {
+    color: black;
+    margin-left: 30px;
+    font-size: 30px;
+    cursor: pointer;
+   
+}
+.sidebar{
+    background-color: rgb(31, 68, 68);
+    position: absolute;
+    margin-top: 90px;
+    width: 250px;
+    height: 100vh;
+    border-radius: 5px;
+    box-sizing: border-box;
+    left: 0px;
+    transform: translate(-100%);
+
+}
+.show_sidebar{
+    transform: translate(0%) !important;
+}
+.links{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    
+}
+.links li a{
+    color:#fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-bottom: 30px;
+    display: inline-flex;
+}
+.social_media_links{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 40px;
+}
+.social_media_links li {
+    width: 50px;
+    height: 50px;
+    
+    background-color: white;
+    
+    display: inline-block;
+    flex-direction: column;
+    border-radius: 50px;
+    /* text-align: center; */
+    line-height: 30px;
+    margin-right: 5px;
+    
+
+}
+
+.search_portion{
+    height: 7vmax;
+    width: 96vmax;
+    /* background-color: rosybrown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.searchicon{
+    height: 50px;
+    width: 50px;
+
+    
+}
+.search_button{
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.search_box input{
+    height: 40px;
+    width: 60vmax;
+    border-radius: 10px;
+    cursor: text;
+    border: none;
+    outline: none;
+
+}
+@media (max-width:600px) {
+    .search_box input{
+        height: 40px;
+        width: 140px;
+        border-radius: 20px;
+        
+    
+    }
+    .search_portion{
+        height: 7vmax;
+        width: 93vmax;
+        margin: 17px;
+    }
+    
+}
